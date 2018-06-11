@@ -19,7 +19,10 @@ class Board extends Component {
   render() {
     return (
       <div>
-        Board
+        <Card
+          text={CARD_DATA.cards[1].text}
+          emoji={CARD_DATA.cards[1].emoji}
+          />
       </div>
     )
   }
