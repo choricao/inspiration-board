@@ -16,29 +16,51 @@ class Board extends Component {
     };
   }
 
+  componentDidMount = () => {
+    axios.get('https://inspiration-board.herokuapp.com/boards/zheng/cards')
+      .then( (response) => {
+        this.setState({
+          cards: response.data,
+        });
+      })
+      .catch( (error) => {
+        this.setState({
+          error: error.message,
+        });
+      });
+  }
+
   renderCards = () => {
-    const cards = CARD_DATA.cards.map( (card, index) => {
+    const cards = this.state.cards.map( (card, index) => {
       return (
         <Card
           key={index}
-          text={card.text}
-          emoji={card.emoji}
+          text={card.card.text}
+          emoji={card.card.emoji}
           />
       );
     });
 
-    console.log(cards);
     return cards;
+  }
+
+  renderError = () => {
+    if (this.state.error) {
+      return (
+        <p>{this.state.error}</p>
+      );
+    }
   }
 
   render() {
     return (
       <div>
+        {this.renderError()}
         {this.renderCards()}
       </div>
     )
   }
-
+  
 }
 
 Board.propTypes = {
