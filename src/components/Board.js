@@ -52,9 +52,20 @@ class Board extends Component {
     }
   }
 
+  addCard = (card) => {
+    const cards = this.state.cards;
+    const newCard = {'card': card};
+
+    cards.push(newCard);
+    this.setState({
+      cards,
+    });
+  }
+
   render() {
     return (
       <div className="board">
+        <NewCardForm addCardCallback={this.addCard}/>
         {this.renderError()}
         {this.renderCards()}
       </div>
