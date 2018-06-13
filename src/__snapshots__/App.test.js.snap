@@ -32,7 +32,7 @@ ShallowWrapper {
           </h1>
 </header>,
         <Board
-          boardName="Ada-Lovelace"
+          boardName="zheng"
           url="https://inspiration-board.herokuapp.com/boards/"
 />,
       ],
@@ -90,7 +90,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "boardName": "Ada-Lovelace",
+          "boardName": "zheng",
           "url": "https://inspiration-board.herokuapp.com/boards/",
         },
         "ref": null,
@@ -121,7 +121,7 @@ ShallowWrapper {
             </h1>
 </header>,
           <Board
-            boardName="Ada-Lovelace"
+            boardName="zheng"
             url="https://inspiration-board.herokuapp.com/boards/"
 />,
         ],
@@ -179,7 +179,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "boardName": "Ada-Lovelace",
+            "boardName": "zheng",
             "url": "https://inspiration-board.herokuapp.com/boards/",
           },
           "ref": null,

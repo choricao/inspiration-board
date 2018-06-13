@@ -34,6 +34,7 @@ class Card extends Component {
       </div>
     )
   }
+  
 }
 
 Card.propTypes = {
