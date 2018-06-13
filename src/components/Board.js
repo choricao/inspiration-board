@@ -35,8 +35,10 @@ class Board extends Component {
       return (
         <Card
           key={index}
+          id={card.card.id}
           text={card.card.text}
           emoji={card.card.emoji}
+          deleteCardCallback={this.deleteCard}
           />
       );
     });
@@ -62,6 +64,25 @@ class Board extends Component {
         this.setState({
           cards,
           message: 'New card was added successfully'
+        });
+      })
+      .catch((error) => {
+        this.setState({
+          message: error.message,
+        });
+      });
+  }
+
+  deleteCard = (id) => {
+    URL = `https://inspiration-board.herokuapp.com/boards/:board_name/cards/${id}`
+    let cards = this.state.cards;
+
+    axios.delete(URL)
+      .then((response) => {
+        cards = cards.filter(card => card.card.id !== id);
+        this.setState({
+          cards,
+          message: 'Card was deleted successfully',
         });
       })
       .catch((error) => {

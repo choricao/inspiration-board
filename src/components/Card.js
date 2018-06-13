@@ -14,9 +14,19 @@ class Card extends Component {
     }
   }
 
+  onClickDelete = () => {
+    this.props.deleteCardCallback(this.props.id);
+  }
+
   render() {
     return (
       <div className="card">
+        <section
+          className="card__delete"
+          onClick={this.onClickDelete}
+          >
+          X
+        </section>
         <section className="card__content">
           <span className="card__content-text">{this.props.text}</span>
           <span className="card__content-emoji">{this.renderEmoji()}</span>
@@ -27,8 +37,10 @@ class Card extends Component {
 }
 
 Card.propTypes = {
+  id: PropTypes.number.isRequired,
   text: PropTypes.string,
   emoji: PropTypes.string,
+  deleteCardCallback: PropTypes.func.isRequired,
 };
 
 export default Card;
