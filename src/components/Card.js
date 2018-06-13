@@ -15,6 +15,7 @@ class Card extends Component {
   }
 
   onClickDelete = () => {
+    console.log(this.props.id);
     this.props.deleteCardCallback(this.props.id);
   }
 
@@ -34,7 +35,7 @@ class Card extends Component {
       </div>
     )
   }
-  
+
 }
 
 Card.propTypes = {

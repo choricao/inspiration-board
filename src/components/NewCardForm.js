@@ -6,7 +6,7 @@ import './NewCardForm.css';
 const EMOJI_LIST = ["", "heart_eyes", "beer", "clap", "sparkling_heart", "heart_eyes_cat", "dog"]
 
 class NewCardForm extends Component {
-  
+
   constructor() {
     super();
 
@@ -43,28 +43,30 @@ class NewCardForm extends Component {
     });
 
     return (
-      <form onSubmit={this.onFormSubmit}>
-        <div>
-          <label htmlFor="text">Text: </label>
-          <input
+      <form onSubmit={this.onFormSubmit} className="new-card-form">
+        <header className="new-card-form__header">
+          Create New Card
+        </header>
+        <div className="new-card-form__form">
+          <label htmlFor="text" className="new-card-form__form-label">Text: </label>
+          <textarea
             name="text"
             value={this.state.text}
             onChange={this.onFieldChange}
-            type="text"
+            className="new-card-form__form-textarea"
             />
-        </div>
-        <div>
-          <label htmlFor="emoji">Emoji: </label>
+          <label htmlFor="emoji" className="new-card-form__form-label">Emoji: </label>
           <select
             name="emoji"
             value={this.state.emoji}
             onChange={this.onFieldChange}
             type="text"
+            className="new-card-form__form-select"
             >
             {options}
           </select>
+          <input type="submit" value="Add Card" className="new-card-form__form-button"/>
         </div>
-        <input type="submit" value="Add Card" />
       </form>
     );
   }

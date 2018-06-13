@@ -6,7 +6,7 @@ import NewCardForm from './NewCardForm';
 import './Board.css';
 
 class Board extends Component {
-  
+
   constructor() {
     super();
 
@@ -55,11 +55,10 @@ class Board extends Component {
 
   addCard = (card) => {
     const cards = this.state.cards;
-    const newCard = {'card': card};
 
     axios.post('https://inspiration-board.herokuapp.com/boards/zheng/cards', card)
       .then((response) => {
-        cards.push(newCard);
+        cards.push(response.data);
         this.setState({
           cards,
           message: 'New card was added successfully'
@@ -94,9 +93,11 @@ class Board extends Component {
   render() {
     return (
       <div className="board">
-        <NewCardForm addCardCallback={this.addCard}/>
-        {this.renderMessage()}
-        {this.renderCards()}
+        <NewCardForm
+          addCardCallback={this.addCard}
+          />
+        <section className="validation-errors-display">{this.renderMessage()}</section>
+        <section className="cards">{this.renderCards()}</section>
       </div>
     )
   }
