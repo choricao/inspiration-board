@@ -25,7 +25,7 @@ class Board extends Component {
       })
       .catch( (error) => {
         this.setState({
-          error: error.message,
+          message: error.message,
         });
       });
   }
@@ -44,10 +44,10 @@ class Board extends Component {
     return cards;
   }
 
-  renderError = () => {
-    if (this.state.error) {
+  renderMessage = () => {
+    if (this.state.message) {
       return (
-        <p>{this.state.error}</p>
+        <p>{this.state.message}</p>
       );
     }
   }
@@ -56,17 +56,26 @@ class Board extends Component {
     const cards = this.state.cards;
     const newCard = {'card': card};
 
-    cards.push(newCard);
-    this.setState({
-      cards,
-    });
+    axios.post('https://inspiration-board.herokuapp.com/boards/zheng/cards', card)
+      .then((response) => {
+        cards.push(newCard);
+        this.setState({
+          cards,
+          message: 'New card was added successfully'
+        });
+      })
+      .catch((error) => {
+        this.setState({
+          message: error.message,
+        });
+      });
   }
 
   render() {
     return (
       <div className="board">
         <NewCardForm addCardCallback={this.addCard}/>
-        {this.renderError()}
+        {this.renderMessage()}
         {this.renderCards()}
       </div>
     )
