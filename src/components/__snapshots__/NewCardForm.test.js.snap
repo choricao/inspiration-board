@@ -57,16 +57,6 @@ ShallowWrapper {
                               value=""
                     />
                     <option
-                              value="heart_eyes"
-                    >
-                              😍
-                    </option>
-                    <option
-                              value="beer"
-                    >
-                              🍺
-                    </option>
-                    <option
                               value="clap"
                     >
                               👏
@@ -77,22 +67,52 @@ ShallowWrapper {
                               💖
                     </option>
                     <option
-                              value="heart_eyes_cat"
+                              value="hospital"
                     >
-                              😻
+                              🏥
                     </option>
                     <option
-                              value="dog"
+                              value="bus"
                     >
-                              🐶
+                              🚌
+                    </option>
+                    <option
+                              value="umbrella"
+                    >
+                              ☔
+                    </option>
+                    <option
+                              value="computer"
+                    >
+                              💻
+                    </option>
+                    <option
+                              value="sleepy"
+                    >
+                              😪
+                    </option>
+                    <option
+                              value="mouse"
+                    >
+                              🐭
+                    </option>
+                    <option
+                              value="disappointed"
+                    >
+                              😞
+                    </option>
+                    <option
+                              value="sunny"
+                    >
+                              ☀️
                     </option>
           </select>
-          <input
-                    className="new-card-form__form-button"
-                    type="submit"
-                    value="Add Card"
-          />
 </div>,
+        <input
+          className="new-card-form__form-button"
+          type="submit"
+          value="Add Card"
+/>,
       ],
       "className": "new-card-form",
       "onSubmit": [Function],
@@ -146,16 +166,6 @@ ShallowWrapper {
                             value=""
               />
               <option
-                            value="heart_eyes"
-              >
-                            😍
-              </option>
-              <option
-                            value="beer"
-              >
-                            🍺
-              </option>
-              <option
                             value="clap"
               >
                             👏
@@ -166,21 +176,46 @@ ShallowWrapper {
                             💖
               </option>
               <option
-                            value="heart_eyes_cat"
+                            value="hospital"
               >
-                            😻
+                            🏥
               </option>
               <option
-                            value="dog"
+                            value="bus"
               >
-                            🐶
+                            🚌
+              </option>
+              <option
+                            value="umbrella"
+              >
+                            ☔
+              </option>
+              <option
+                            value="computer"
+              >
+                            💻
+              </option>
+              <option
+                            value="sleepy"
+              >
+                            😪
+              </option>
+              <option
+                            value="mouse"
+              >
+                            🐭
+              </option>
+              <option
+                            value="disappointed"
+              >
+                            😞
+              </option>
+              <option
+                            value="sunny"
+              >
+                            ☀️
               </option>
 </select>,
-            <input
-              className="new-card-form__form-button"
-              type="submit"
-              value="Add Card"
-/>,
           ],
           "className": "new-card-form__form",
         },
@@ -236,16 +271,6 @@ ShallowWrapper {
                   value=""
 />,
                 <option
-                  value="heart_eyes"
->
-                  😍
-</option>,
-                <option
-                  value="beer"
->
-                  🍺
-</option>,
-                <option
                   value="clap"
 >
                   👏
@@ -256,14 +281,44 @@ ShallowWrapper {
                   💖
 </option>,
                 <option
-                  value="heart_eyes_cat"
+                  value="hospital"
 >
-                  😻
+                  🏥
 </option>,
                 <option
-                  value="dog"
+                  value="bus"
 >
-                  🐶
+                  🚌
+</option>,
+                <option
+                  value="umbrella"
+>
+                  ☔
+</option>,
+                <option
+                  value="computer"
+>
+                  💻
+</option>,
+                <option
+                  value="sleepy"
+>
+                  😪
+</option>,
+                <option
+                  value="mouse"
+>
+                  🐭
+</option>,
+                <option
+                  value="disappointed"
+>
+                  😞
+</option>,
+                <option
+                  value="sunny"
+>
+                  ☀️
 </option>,
               ],
               "className": "new-card-form__form-select",
@@ -284,30 +339,6 @@ ShallowWrapper {
                 },
                 "ref": null,
                 "rendered": null,
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": "heart_eyes",
-                "nodeType": "host",
-                "props": Object {
-                  "children": "😍",
-                  "value": "heart_eyes",
-                },
-                "ref": null,
-                "rendered": "😍",
-                "type": "option",
-              },
-              Object {
-                "instance": null,
-                "key": "beer",
-                "nodeType": "host",
-                "props": Object {
-                  "children": "🍺",
-                  "value": "beer",
-                },
-                "ref": null,
-                "rendered": "🍺",
                 "type": "option",
               },
               Object {
@@ -336,46 +367,118 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": "heart_eyes_cat",
+                "key": "hospital",
                 "nodeType": "host",
                 "props": Object {
-                  "children": "😻",
-                  "value": "heart_eyes_cat",
+                  "children": "🏥",
+                  "value": "hospital",
                 },
                 "ref": null,
-                "rendered": "😻",
+                "rendered": "🏥",
                 "type": "option",
               },
               Object {
                 "instance": null,
-                "key": "dog",
+                "key": "bus",
                 "nodeType": "host",
                 "props": Object {
-                  "children": "🐶",
-                  "value": "dog",
+                  "children": "🚌",
+                  "value": "bus",
                 },
                 "ref": null,
-                "rendered": "🐶",
+                "rendered": "🚌",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "umbrella",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "☔",
+                  "value": "umbrella",
+                },
+                "ref": null,
+                "rendered": "☔",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "computer",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "💻",
+                  "value": "computer",
+                },
+                "ref": null,
+                "rendered": "💻",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "sleepy",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "😪",
+                  "value": "sleepy",
+                },
+                "ref": null,
+                "rendered": "😪",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "mouse",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "🐭",
+                  "value": "mouse",
+                },
+                "ref": null,
+                "rendered": "🐭",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "disappointed",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "😞",
+                  "value": "disappointed",
+                },
+                "ref": null,
+                "rendered": "😞",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": "sunny",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "☀️",
+                  "value": "sunny",
+                },
+                "ref": null,
+                "rendered": "☀️",
                 "type": "option",
               },
             ],
             "type": "select",
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "new-card-form__form-button",
-              "type": "submit",
-              "value": "Add Card",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
         ],
         "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "new-card-form__form-button",
+          "type": "submit",
+          "value": "Add Card",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
       },
     ],
     "type": "form",
@@ -424,16 +527,6 @@ ShallowWrapper {
                                     value=""
                         />
                         <option
-                                    value="heart_eyes"
-                        >
-                                    😍
-                        </option>
-                        <option
-                                    value="beer"
-                        >
-                                    🍺
-                        </option>
-                        <option
                                     value="clap"
                         >
                                     👏
@@ -444,22 +537,52 @@ ShallowWrapper {
                                     💖
                         </option>
                         <option
-                                    value="heart_eyes_cat"
+                                    value="hospital"
                         >
-                                    😻
+                                    🏥
                         </option>
                         <option
-                                    value="dog"
+                                    value="bus"
                         >
-                                    🐶
+                                    🚌
+                        </option>
+                        <option
+                                    value="umbrella"
+                        >
+                                    ☔
+                        </option>
+                        <option
+                                    value="computer"
+                        >
+                                    💻
+                        </option>
+                        <option
+                                    value="sleepy"
+                        >
+                                    😪
+                        </option>
+                        <option
+                                    value="mouse"
+                        >
+                                    🐭
+                        </option>
+                        <option
+                                    value="disappointed"
+                        >
+                                    😞
+                        </option>
+                        <option
+                                    value="sunny"
+                        >
+                                    ☀️
                         </option>
             </select>
-            <input
-                        className="new-card-form__form-button"
-                        type="submit"
-                        value="Add Card"
-            />
 </div>,
+          <input
+            className="new-card-form__form-button"
+            type="submit"
+            value="Add Card"
+/>,
         ],
         "className": "new-card-form",
         "onSubmit": [Function],
@@ -513,16 +636,6 @@ ShallowWrapper {
                                 value=""
                 />
                 <option
-                                value="heart_eyes"
-                >
-                                😍
-                </option>
-                <option
-                                value="beer"
-                >
-                                🍺
-                </option>
-                <option
                                 value="clap"
                 >
                                 👏
@@ -533,21 +646,46 @@ ShallowWrapper {
                                 💖
                 </option>
                 <option
-                                value="heart_eyes_cat"
+                                value="hospital"
                 >
-                                😻
+                                🏥
                 </option>
                 <option
-                                value="dog"
+                                value="bus"
                 >
-                                🐶
+                                🚌
+                </option>
+                <option
+                                value="umbrella"
+                >
+                                ☔
+                </option>
+                <option
+                                value="computer"
+                >
+                                💻
+                </option>
+                <option
+                                value="sleepy"
+                >
+                                😪
+                </option>
+                <option
+                                value="mouse"
+                >
+                                🐭
+                </option>
+                <option
+                                value="disappointed"
+                >
+                                😞
+                </option>
+                <option
+                                value="sunny"
+                >
+                                ☀️
                 </option>
 </select>,
-              <input
-                className="new-card-form__form-button"
-                type="submit"
-                value="Add Card"
-/>,
             ],
             "className": "new-card-form__form",
           },
@@ -603,16 +741,6 @@ ShallowWrapper {
                     value=""
 />,
                   <option
-                    value="heart_eyes"
->
-                    😍
-</option>,
-                  <option
-                    value="beer"
->
-                    🍺
-</option>,
-                  <option
                     value="clap"
 >
                     👏
@@ -623,14 +751,44 @@ ShallowWrapper {
                     💖
 </option>,
                   <option
-                    value="heart_eyes_cat"
+                    value="hospital"
 >
-                    😻
+                    🏥
 </option>,
                   <option
-                    value="dog"
+                    value="bus"
 >
-                    🐶
+                    🚌
+</option>,
+                  <option
+                    value="umbrella"
+>
+                    ☔
+</option>,
+                  <option
+                    value="computer"
+>
+                    💻
+</option>,
+                  <option
+                    value="sleepy"
+>
+                    😪
+</option>,
+                  <option
+                    value="mouse"
+>
+                    🐭
+</option>,
+                  <option
+                    value="disappointed"
+>
+                    😞
+</option>,
+                  <option
+                    value="sunny"
+>
+                    ☀️
 </option>,
                 ],
                 "className": "new-card-form__form-select",
@@ -651,30 +809,6 @@ ShallowWrapper {
                   },
                   "ref": null,
                   "rendered": null,
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": "heart_eyes",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "😍",
-                    "value": "heart_eyes",
-                  },
-                  "ref": null,
-                  "rendered": "😍",
-                  "type": "option",
-                },
-                Object {
-                  "instance": null,
-                  "key": "beer",
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "🍺",
-                    "value": "beer",
-                  },
-                  "ref": null,
-                  "rendered": "🍺",
                   "type": "option",
                 },
                 Object {
@@ -703,46 +837,118 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": "heart_eyes_cat",
+                  "key": "hospital",
                   "nodeType": "host",
                   "props": Object {
-                    "children": "😻",
-                    "value": "heart_eyes_cat",
+                    "children": "🏥",
+                    "value": "hospital",
                   },
                   "ref": null,
-                  "rendered": "😻",
+                  "rendered": "🏥",
                   "type": "option",
                 },
                 Object {
                   "instance": null,
-                  "key": "dog",
+                  "key": "bus",
                   "nodeType": "host",
                   "props": Object {
-                    "children": "🐶",
-                    "value": "dog",
+                    "children": "🚌",
+                    "value": "bus",
                   },
                   "ref": null,
-                  "rendered": "🐶",
+                  "rendered": "🚌",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "umbrella",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "☔",
+                    "value": "umbrella",
+                  },
+                  "ref": null,
+                  "rendered": "☔",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "computer",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "💻",
+                    "value": "computer",
+                  },
+                  "ref": null,
+                  "rendered": "💻",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "sleepy",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "😪",
+                    "value": "sleepy",
+                  },
+                  "ref": null,
+                  "rendered": "😪",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "mouse",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "🐭",
+                    "value": "mouse",
+                  },
+                  "ref": null,
+                  "rendered": "🐭",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "disappointed",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "😞",
+                    "value": "disappointed",
+                  },
+                  "ref": null,
+                  "rendered": "😞",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "sunny",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "☀️",
+                    "value": "sunny",
+                  },
+                  "ref": null,
+                  "rendered": "☀️",
                   "type": "option",
                 },
               ],
               "type": "select",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "new-card-form__form-button",
-                "type": "submit",
-                "value": "Add Card",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
           ],
           "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "new-card-form__form-button",
+            "type": "submit",
+            "value": "Add Card",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
         },
       ],
       "type": "form",
