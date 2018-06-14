@@ -48,6 +48,7 @@
 .card__content-text {
   text-overflow: ellipsis;
   overflow: hidden;
+  font-size: 1.2rem;
 }
 
 .card__content-emoji {
@@ -63,4 +64,5 @@
   align-self: start;
   font-family: 'Permanent Marker', Helvetica, sans-serif;
   padding-left: 20px;
+  font-size: 1.3rem;
 }

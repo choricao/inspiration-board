@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import emoji from 'emoji-dictionary';
 import './NewCardForm.css';
 
-const EMOJI_LIST = ["", "heart_eyes", "beer", "clap", "sparkling_heart", "heart_eyes_cat", "dog"]
+const EMOJI_LIST = ["", "clap", "sparkling_heart", "hospital", "bus", "umbrella", "computer", "sleepy", "mouse", "disappointed", "sunny"]
 
 class NewCardForm extends Component {
 
@@ -65,8 +65,8 @@ class NewCardForm extends Component {
             >
             {options}
           </select>
-          <input type="submit" value="Add Card" className="new-card-form__form-button"/>
         </div>
+        <input type="submit" value="Add Card" className="new-card-form__form-button"/>
       </form>
     );
   }
