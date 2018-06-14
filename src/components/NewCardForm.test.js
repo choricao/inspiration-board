@@ -41,5 +41,45 @@ describe('NewCardForm', () => {
       element = wrapper.find(`[name="${field}"]`);
       expect(element.getElement().props.value).toEqual(value);
     });
+
+    wrapper.unmount();
+  });
+
+  test('NewCardForm can submit', () => {
+    const mockAddCardCallback = jest.fn();
+    const wrapper = shallow(<NewCardForm
+      addCardCallback={mockAddCardCallback}
+      />
+    );
+
+    wrapper.find('[name="text"]').simulate('change', {
+      target: {
+        name: 'text',
+        value: 'heart',
+      }
+    });
+    wrapper.find('[name="emoji"]').simulate('change', {
+      target: {
+        name: 'emoji',
+        value: 'heart_eyes',
+      }
+    });
+    wrapper.find('form').simulate('submit', {
+       preventDefault: () => {},
+     });
+    wrapper.update();
+
+    const textField = wrapper.find('[name="text"]');
+    expect(textField.getElement().props.value).toEqual('');
+    const emojiField = wrapper.find('[name="emoji"]');
+    expect(emojiField.getElement().props.value).toEqual('');
+
+    expect(mockAddCardCallback).toHaveBeenCalled();
+    expect(mockAddCardCallback.mock.calls[0][0]).toEqual({
+      text: 'heart',
+      emoji: 'heart_eyes',
+    });
+
+    wrapper.unmount();
   });
 });
