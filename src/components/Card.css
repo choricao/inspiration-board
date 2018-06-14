@@ -1,6 +1,4 @@
 .card {
-  background-color: #F4FF81;
-
   padding: 1em 0;
   margin: 0.5rem;
 
@@ -13,6 +11,26 @@
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   align-items: center;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.blue {
+  background-color: lightblue;
+}
+
+.purple {
+  background-color: #c77cea;
+}
+
+.green {
+  background-color: rgb(146, 209, 187);
+}
+
+.yellow {
+  background-color: #F4FF81;
 }
 
 .card__content {

@@ -18,9 +18,23 @@ class Card extends Component {
     this.props.deleteCardCallback(this.props.id);
   }
 
+  pickColor = () => {
+    if (this.props.id % 5 === 1) {
+      return "card pink";
+    } else if (this.props.id % 5 === 2) {
+      return "card blue";
+    } else if (this.props.id % 5 === 3) {
+      return "card purple";
+    } else if (this.props.id % 5 === 4) {
+      return "card green";
+    } else {
+      return "card yellow";
+    }
+  }
+
   render() {
     return (
-      <div className="card">
+      <div className={this.pickColor()}>
         <section
           className="card__delete"
           onClick={this.onClickDelete}
